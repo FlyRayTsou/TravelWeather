@@ -11,6 +11,9 @@
 |
 */
 
+/*
 Route::get('/', function () {
-    return view('welcome');
+    return view('weather');
 });
+*/
+Route::get('/', 'WeatherController@index');

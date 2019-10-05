@@ -6,6 +6,32 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
+8 Hours Challenge - Weather Instant Information
+
+## Preface
+Everyone always think there would be somebody, but the fact is that there are nobody. So, let us be the "nobody". Once you pure your soul and passion into the project, The project would not be just a project, and it may help you or others one day. Remind ourself that learning from the world and contributing to the world.  
+
+## Develop Methodlogy
+We need to strike a balance between timeline and technical debt. We should adopt the most useful tool other than adopt latest tools. We need to design, develop and release in 8 hours. Let's do it.
+
+1. Understand goal deeply.
+Our goal is to provide the correct weather information for foreign tourist.
+
+2. Design the UI/UX and logic
+According to the goal, I use responsitive web design to fix requirement.
+You would not bring the laptop when you are traveling. Howerer, you would bring your smart phone definitely. I don't not have much time, so I search a suitable opensource responsitive web design template.
+If I am traveling, I would want to know currently weather, so the first page would show city and weather.
+
+3. Read weather API document
+Understand that what could we get from the OpenWeather API.
+
+4. Deal with weather information
+
+5. Use only Blade view other than embeded vue.js
+ 
+
+6. Future Plan 
+-redis save data increase speed.
 
 ## About Laravel
 
