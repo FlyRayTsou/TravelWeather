@@ -1,4 +1,4 @@
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Lyb-gxZqocQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Travel Helper](http://img.youtube.com/vi/Lyb-gxZqocQ/0.jpg)](http://www.youtube.com/watch?v=Lyb-gxZqocQ "Travel Helper")
 
 8 Hours Challenge - Travel Helper
 
