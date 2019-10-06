@@ -23,6 +23,7 @@ class WeatherController extends Controller
         {
             $weathers[$city] = $this->getCurrentWeatherByCityName($city, $author);
             $weathers[$city]['author'] = $author;
+            $weathers[$city]['forecast'] = $this->getForecastWeatherByCityName($city);
         }
         return view("weather")->with("weathers", $weathers);
     }
@@ -33,5 +34,13 @@ class WeatherController extends Controller
         $api_method = 'weather';
         $response = $client->request('GET', $this->weather_api_url.$api_method.'?q='.$city.'&APPID='.$this->weather_api_key);
         return json_decode($response->getBody(), true);
+    }
+
+    private function getForecastWeatherByCityName($city)
+    {
+        $client = new \GuzzleHttp\Client();
+        $api_method = 'forecast';
+        $response = $client->request('GET', $this->weather_api_url.$api_method.'?q='.$city.'&APPID='.$this->weather_api_key);
+        return json_decode($response->getBody(), true);    
     }
 }

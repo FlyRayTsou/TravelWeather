@@ -19,7 +19,7 @@
             <div id="wrapper">
                 <!-- Header -->
                     <header id="header">
-                        <h1><a href="index.html"><strong>Multiverse</strong> by HTML5 UP</a></h1>
+                        <h1><a href="https://html5up.net/"><strong>Multiverse</strong> by HTML5 UP</a></h1>
                         <nav>
                             <ul>
                                 <li><a href="#footer" class="icon solid fa-info-circle">About</a></li>
@@ -36,6 +36,19 @@
                             <a href="images/fulls/{{$city}}.jpg" class="image"><img src="images/thumbs/{{$city}}.jpg" alt="" /></a>
                             <h2>{{ $city  }} / humidity : {{ $weather["main"]["humidity"] }}% / {{ $weather["main"]["temp"] }} °F <br> {{ $weather['weather'][0]['description'] }}</h2>
                             <p>Photo by {{ $weather["author"] }} on Unsplash</p>
+                            <table border="1">
+                                <tr>
+                                    <td>Date</td>
+                                    <td>Temperature</td>
+                                </tr>
+                                @foreach(array_slice($weather["forecast"]["list"], 0, 6) as $forecast_item)
+                                <tr>
+                                    <td>{{ $forecast_item["dt_txt"] }}</td>
+                                    <td>{{ $forecast_item["main"]["temp"] }}</td>
+                                </tr>
+                                @endforeach
+                                <tr>
+                            </table>
                         </article>
                         @endforeach
                     </div>

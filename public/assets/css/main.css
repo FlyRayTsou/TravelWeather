@@ -997,17 +997,18 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px #36383c;
 			border-left: 0;
 			border-right: 0;
+			color: #fff;
+			font-weight: bold;
 		}
-
-			table tbody tr:nth-child(2n + 1) {
-				background-color: #34363b;
-			}
 
 		table td {
 			padding: 0.75em 0.75em;
+		}
+
+		table td:hover {
+			color: #f00;
 		}
 
 		table th {
@@ -1652,6 +1653,7 @@ input, select, textarea {
 				margin: 0;
 				position: absolute;
 				z-index: 1;
+				font-weight:bold;
 			}
 
 			#main .thumb > p {
@@ -2051,5 +2053,5 @@ input, select, textarea {
 .title-part {
 	text-align: center;
 	width:100%;
-	margin:10px auto;
+	margin-top:20px;
 }
