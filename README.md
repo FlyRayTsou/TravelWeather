@@ -1,5 +1,6 @@
 [![Travel Helper](http://img.youtube.com/vi/Lyb-gxZqocQ/0.jpg)](http://www.youtube.com/watch?v=Lyb-gxZqocQ "Travel Helper")
-Introduction Video(http://www.youtube.com/watch?v=Lyb-gxZqocQ)
+<br>
+[Introduction Video](http://www.youtube.com/watch?v=Lyb-gxZqocQ)
 
 8 Hours Challenge - Travel Helper
 
