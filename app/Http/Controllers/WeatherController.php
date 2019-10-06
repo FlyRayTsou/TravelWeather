@@ -13,7 +13,7 @@ class WeatherController extends Controller
                       'yokohama'=>'Jezael Melgoza',
                       'kyoto'=>'Sorasak',
                       'osaka'=>'Koi Visuals',
-                      'sapporo'=>'Jaeyoung Geoffrey',
+                      'sapporo'=>'Magic Mary',
                       'nagoya'=>'Teo Zac'];
 
     public function index()
