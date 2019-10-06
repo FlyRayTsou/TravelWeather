@@ -61,9 +61,9 @@ We just choose the most important part and optimize the other part in the future
 Thank for your challenge this time. It also lets me to think over about my methodology when I get a new project. Although I didn't do very good in the timer test, I can get more challenge if you need more evindence to prove myself ability. In conclusion, it is a very good challenge for me other than just a similarly leetcode problem.　ありがとうございます。 
 
 ## Timer Solution
-Indeed Timer test is not difficult but I do not solve it in time.<br>
-Solution I : just remove the // in front of Pitch.start() in Pitch3.js <br>
-Solution II: just set Pitch.EndTime = 120000 in main.html
+Indeed Timer test is not difficult but I do not solve it in time. Just add two more steps and we can solve it.<br>
+Step1 : just set Pitch.EndTime = 120000 in main.html<br>
+Step2 : just remove the // in front of Pitch.start() in Pitch3.js 
 
 ## Main Coding File
 [weather.blade.php](https://github.com/FlyRayTsou/TravelWeather/blob/master/resources/views/weather.blade.php)
