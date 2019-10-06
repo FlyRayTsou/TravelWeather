@@ -1,98 +1,55 @@
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-8 Hours Challenge - Weather Instant Information
+8 Hours Challenge - Weather Information
 
 ## Preface
 Everyone always think there would be somebody, but the fact is that there are nobody. So, let us be the "nobody". Once you pure your soul and passion into the project, The project would not be just a project, and it may help you or others one day. Remind ourself that learning from the world and contributing to the world.  
 
-## Develop Methodlogy
+## Design Methodology
 We need to strike a balance between timeline and technical debt. We should adopt the most useful tool other than adopt latest tools. We need to design, develop and release in 8 hours. Let's do it.
 
-1. Understand goal deeply.
-Our goal is to provide the correct weather information for foreign tourist.
+1. Understand goal deeply
+Our goal is to provide the correct weather information for foreign travelers.
 
 2. Design the UI/UX and logic
-According to the goal, I use responsitive web design to fix requirement.
-You would not bring the laptop when you are traveling. Howerer, you would bring your smart phone definitely. I don't not have much time, so I search a suitable opensource responsitive web design template.
-If I am traveling, I would want to know currently weather, so the first page would show city and weather.
+According to the goal, I choose responsitive web design to fix requirement.
+You would not always bring the laptop when you are traveling. Howerer, you would bring your smart phone definitely. I don't not have much time, so I search a suitable opensource responsitive web design template.
+If I am traveling, I would want to know current weather and a few hours later. The first page would directly current show city and weather, and then click the city picture to get the forecast weather.
 
 3. Read weather API document
-Understand that what could we get from the OpenWeather API.
+Understand that what could we get from the OpenWeather API. Depend on our goal, we need to get current and forecast weatcher. We totally use two as below.
+Current Weather : https://api.openweathermap.org/data/2.5/weather?q={city name}
+Forecast Weather : https://api.openweathermap.org/data/2.5/forecast?q={city name}
+At this part, you need to register to get the api key.
 
-4. Deal with weather information
+## Develop Methodology
 
-5. Use only Blade view other than embeded vue.js
- 
+1. Deal with weather information
+I don't not spend much time to reformat data, but to think how to let UI/UX more easily to use.
+We just need to call openweather api to get data and render to the view.
 
-6. Future Plan 
--redis save data increase speed.
+2. Use Blade render view
+I decide to use Blade instead of importing vue.js because we don't have much interaction behaviors at this stage. 
 
-## About Laravel
+3. Test and adjust
+Test every element and function is working perfectly and Adjust UI to enhance user experience. For example, let the forecast weather font become red when the mouse hover on it. The user can easily to read weather information.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Future Technical Plan 
+In the logn term, we need to decrease technical debt but the fact is that you would never have enough time.
+We just choose the most important part and optimize the other part in the future. We set some plan to improve loading speed and maintainability.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Use redis to save weather data because weather data would not change every minutes. It can increase loading time. 
+- Import frontened Framework to do interaction behaviors and it can more easy to mainin for teams.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Future Feature Plan
 
-## Learning Laravel
+- Traveler can directly type city name to get the city weather information.
+- Traveler can set default cities to show on the landing page.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Philosophy & Motto
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Let us be the nobody. Share the knowledge with others to fullfill the world.
+- Everying has the reason why it exist. Adopt the most suitable tools to achieve the requirement other than always persue latest one.
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Challenge Feedback
+Thank for your challenge this time. It also lets me to think over about my methodology when I get a new project. Although I didn't do very good in the timer test, I can get more challenge if you need more evindence to prove myself ability. In conclusion, it is a very good challenge for me other than just a similarly leetcode problem.　ありがとうございます。 
