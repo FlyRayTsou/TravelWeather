@@ -59,3 +59,7 @@ We just choose the most important part and optimize the other part in the future
 
 ## Challenge Feedback
 Thank for your challenge this time. It also lets me to think over about my methodology when I get a new project. Although I didn't do very good in the timer test, I can get more challenge if you need more evindence to prove myself ability. In conclusion, it is a very good challenge for me other than just a similarly leetcode problem.　ありがとうございます。 
+
+## Main Coding File
+[weather.blade.php](https://github.com/FlyRayTsou/TravelWeather/blob/master/resources/views/weather.blade.php)
+[WeatherController](https://github.com/FlyRayTsou/TravelWeather/blob/master/app/Http/Controllers/WeatherController.php)
