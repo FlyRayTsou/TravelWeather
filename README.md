@@ -1,6 +1,6 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Lyb-gxZqocQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-8 Hours Challenge - Weather Information
+8 Hours Challenge - Travel Helper
 
 ## Preface
 Everyone always think there would be somebody, but the fact is that there are nobody. So, let us be the "nobody". Once you pure your soul and passion into the project, The project would not be just a project, and it may help you or others one day. Remind ourself that learning from the world and contributing to the world.  
@@ -14,13 +14,16 @@ Our goal is to provide the correct weather information for foreign travelers.
 2. Design the UI/UX and logic
 According to the goal, I choose responsitive web design to fix requirement.
 You would not always bring the laptop when you are traveling. Howerer, you would bring your smart phone definitely. I don't not have much time, so I search a suitable opensource responsitive web design template.
-If I am traveling, I would want to know current weather and a few hours later. The first page would directly current show city and weather, and then click the city picture to get the forecast weather.
+If I am traveling, I would want to know current weather and a few hours later. The first page would directly current show city and weather, and then click the city picture to get the forecast weather information. Enhancing user experience is endless challenges, so we don't not do over-deisgn. We would use some tools to detect user behavior like hotjar or A/B test and then we can understand whether our design is good or not.  
 
 3. Read weather API document
-Understand that what could we get from the OpenWeather API. Depend on our goal, we need to get current and forecast weatcher. We totally use two as below.
-Current Weather : https://api.openweathermap.org/data/2.5/weather?q={city name}
-Forecast Weather : https://api.openweathermap.org/data/2.5/forecast?q={city name}
+Understand that what could we get from the OpenWeather API. Depend on our goal, we need to get current and forecast weatcher. We totally use two as below.<br>
+Current Weather : https://api.openweathermap.org/data/2.5/weather?q={city name}<br>
+Forecast Weather : https://api.openweathermap.org/data/2.5/forecast?q={city name}<br>
 At this part, you need to register to get the api key.
+
+4. Why my UI and UX are the best
+I put myself in travlers' shoes and I use Five Ws to design this project. I can easily to get the current weather and forecast weather from this website and even more easier to opeate on the smart phone.
 
 ## Develop Methodology
 
@@ -50,6 +53,7 @@ We just choose the most important part and optimize the other part in the future
 
 - Let us be the nobody. Share the knowledge with others to fullfill the world.
 - Everying has the reason why it exist. Adopt the most suitable tools to achieve the requirement other than always persue latest one.
+- Put ourselves in others' shoes. To design the most suitable UI/UX for our fans.
 
 ## Challenge Feedback
 Thank for your challenge this time. It also lets me to think over about my methodology when I get a new project. Although I didn't do very good in the timer test, I can get more challenge if you need more evindence to prove myself ability. In conclusion, it is a very good challenge for me other than just a similarly leetcode problem.　ありがとうございます。 
